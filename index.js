@@ -21,7 +21,6 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-
     const hobbyCollection = client.db("hobbyHub").collection("hobbyCollection");
 
     app.get("/groups", async (req, res) => {
